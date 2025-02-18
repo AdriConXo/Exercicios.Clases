@@ -11,6 +11,18 @@
 
 class DatosPersonais {
     nome: string;
-    apelido1
+    apelido1: string;
+    apelido2: string;
+    email: string;
+    dataNacemento: number;
+
+    constructor (nome: string, apelido1: string, apelido2: string, email: string, dataNacemento: number){
+       
+        this.nome = nome;
+        this.apelido1 = apelido1;
+        this.apelido2 = apelido2;
+        this.email = email;
+        this.dataNacemento = dataNacemento
+    }
 
 }
