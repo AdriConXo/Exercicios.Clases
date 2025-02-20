@@ -8,40 +8,31 @@ Utilizando a instancia á clase, saca por consola o texto ou número introducido
 */
 
 class NovaClase {
-    num1: number;
-    num2: number;
+   valorConstructor: number;
 
-    constructor (num1: number, num2: number){
-        this.num1 = num1;
-        this.num2 = num2;
-    }
+   constructor(valorConstructor: number) {
+    this.valorConstructor = valorConstructor;
+   }
 
-//Método para devolver la suma de dos nímeros
-sumar(): number {
-    return this.num1 + this.num2;
-    }
+   // Método para devolver la suma de dos números
+   sumarNumeros(num1: number, num2: number): number {
+    return num1 + num2;
+   }
 
- // Método que toma un número de entrada y lo muestra por consola
- mostrarNumero(numero: number): void {
-    console.log(`Número pasado polo método: ${numero}`);
-    }
+   // Método que toma un valor de entrada y lo muestra por consola
+   mostraValor(valor: string): void {
+    console.log(`Valor pasado al método: ${valor}`);
+   }
 
- // Método que devuelve el valor del primer número introducido en el constructor
- obtenerNum1(): number {
-    return this.num1;
-    }
-
- // Método que devuelve el valor del segundo número introducido en el constructor
- obtenerNum2(): number {
-    return this.num2;
+   // Método que pasa el valor del constructor
+   mostrarValorConstructor(): void {
+    console.log(`Valor del constructor: ${this.valorConstructor}`);
    }
 }
 
-let operacion = new NovaClase (10,5);
-//Suma de los dos números
-console.log (`Suma: ${operacion.sumar()}`);
-//Mostrar el número pasado por el metodo
-operacion.mostrarNumero(7);
-//Mostrar el primer y el degundo número
-console.log(`Primer número: ${operacion.obtenerNum1()}`);
-console.log(`Segundo número: ${operacion.obtenerNum2()}`);
+
+let nuevaInstancia = new NovaClase(10);
+
+console.log(nuevaInstancia.sumarNumeros(5, 8)); 
+nuevaInstancia.mostraValor("Texto"); 
+nuevaInstancia.mostrarValorConstructor(); 
