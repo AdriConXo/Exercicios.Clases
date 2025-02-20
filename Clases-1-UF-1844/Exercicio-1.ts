@@ -6,6 +6,9 @@ Deberemos pasar un texto a través do constructor, é dicir, deberemo ter creado
 Dito método deberá escribilo texto insertado por consola.
 Crea un método/función ‘mostrarNumeroPorConsola’, segue os mesmos pasos que o anterior, pero pasándolle un número.
 
+*Da segunte imaxe, saberías interpretar o que está a acontecer?.Explícao
+Esta instanciando unha clase pasandolle uns valores(4,5) e despois no console.log chama a estaclase e co método "suma" a operacion
+collendo os valores (4,5)
 
 Crea un método/función ‘sumaONumero’, inserta un número o cal deberás usalo para sumar neste método, é dicir, ‘this.numero + 5’ por exemplo. 
 Visualiza dito número por consola, tal como temos feito nos exemplos vistos.
