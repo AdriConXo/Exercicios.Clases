@@ -45,49 +45,49 @@ class Coche2 {
         this.numPortas = numPortas;
     }
 
-    // Getter para obtener la marca
+   
     get getMarca(): string {
         return this.marca;
     }
 
-    // Setter para cambiar la marca
+    
     set setMarca(marca: string) {
         this.marca = marca;
     }
 
-    // Getter para obtener el modelo
+    
     get getModelo(): string {
         return this.modelo;
     }
 
-    // Setter para cambiar el modelo
+    
     set setModelo(modelo: string) {
         this.modelo = modelo;
     }
 
-    // Getter para obtener el número de puertas
+    
     get getNumPortas(): number {
         return this.numPortas;
     }
 
-    // Setter para cambiar el número de puertas
+    
     set setNumPortas(numPortas: number) {
         this.numPortas = numPortas;
     }
 
-    // Método para mostrar la información del coche
+    
     mostrarInfoCoche2(): void {
         console.log(`O coche actualizado é un modelo ${this.modelo} marca ${this.marca} e ten ${this.numPortas} portas`);
     }
 }
 
-// Crear una instancia de la clase Coche2
+
 let miCoche2 = new Coche2("Seat", "León", 5);
 
 
-// Cambiar valores usando los setters
-miCoche2.setMarca = "Toyota";  
-miCoche2.setModelo = "Auris";  
-miCoche2.setNumPortas = 4;     
+// Cambio los valores usando el set
+miCoche2.setMarca = "Seat";  
+miCoche2.setModelo = "Ibiza";  
+miCoche2.setNumPortas = 3;     
 
 miCoche2.mostrarInfoCoche2();
