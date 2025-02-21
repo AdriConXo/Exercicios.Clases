@@ -12,24 +12,19 @@ Crea un método onde lea esta variable
 Executa o método creado no paso anterior, onde visualices dito array 
 
 */
-
 class Factura {
-    // Declarar 'producto' correctamente sin valores iniciales
-    private producto: {
-      numDias: number;
-      tipoClase: string;
-      asignatura: string;
-    };
-    
-    // Puedes agregar un constructor si quieres inicializar valores dentro de la clase
-    constructor() {
-      // Inicialización de 'producto'
-      this.producto = {
-        numDias: 0, // Se puede dejar 0 o cualquier otro valor por defecto
-        tipoClase: "",
-        asignatura: ""
-      };
+  producto = {
+      numDias: 5,
+      tipoClase: "presencial",
+      asignatura: "programación"
+  };
+  mostrarProducto() {
+    console.log("Detalles del producto:");
+    for(let clave in this.producto) {
+      console.log(`${clave}: ${this.producto[clave as keyof typeof this.producto]}`);
     }
   }
-  
-    
+}
+const miFactura = new Factura();
+miFactura.mostrarProducto();
+
